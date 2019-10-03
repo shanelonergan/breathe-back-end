@@ -5,9 +5,17 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Session.destroy_all
+User.destroy_all
+
 
 avi = User.create(name:"Avi")
 shane = User.create(name:"Shane")
 
-s1 = Session.create(rounds: 3, user_id: avi.id)
-s2 = Session.create(rounds: 4, user_id: shane.id)
+# s1 = Session.create(rounds: 3, user_id: shane.id, created_at: "2019-09-29 14:28:47")
+# s2 = Session.create(rounds: 3, user_id: shane.id, created_at: "2019-09-30 14:28:47")
+s3 = Session.create(rounds: 3, user_id: shane.id, created_at: "2019-10-01 14:28:47")
+s7 = Session.create(rounds: 3, user_id: shane.id, created_at: "2019-10-02 14:28:47")
+s4 = Session.create(rounds: 4, user_id: shane.id)
+s5 = Session.create(rounds: 4, user_id: avi.id)
+s6 = Session.create(rounds: 4, user_id: avi.id)
