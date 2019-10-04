@@ -9,8 +9,8 @@ Session.destroy_all
 User.destroy_all
 
 
-avi = User.create(name:"Avi")
-shane = User.create(name:"Shane")
+avi = User.create(name:"avi")
+shane = User.create(name:"shane")
 
 # s1 = Session.create(rounds: 3, user_id: shane.id, created_at: "2019-09-29 14:28:47")
 # s2 = Session.create(rounds: 3, user_id: shane.id, created_at: "2019-09-30 14:28:47")
